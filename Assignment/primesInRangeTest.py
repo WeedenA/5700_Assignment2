@@ -35,14 +35,14 @@ class PrimeInRangeTest(unittest.TestCase):
 
         actualResult = primesInRange.primesInRange(lowBound, highBound)
         self.assertListEqual(expectedResult, actualResult)
-    def test601_601_EqualLowAndHighBoundsIsPrime(self):
+    def test601_601_EqualLowAndHighBoundIsPrime(self):
         lowBound = 601
         highBound = 601
         expectedResult = [601]
 
         actualResult = primesInRange.primesInRange(lowBound, highBound)
         self.assertListEqual(expectedResult, actualResult)
-    def test42_42_EqualLowAndHighBoundsIsNotPrime(self):
+    def test42_42_EqualLowAndHighBoundIsNotPrime(self):
         lowBound = 42
         highBound = 42
         expectedResult = []
@@ -86,7 +86,7 @@ class PrimeInRangeTest(unittest.TestCase):
         self.assertEqual(expectedResult, actualResult)
     def test2_g_NonIntegerHighBound(self):
         lowBound = 2
-        highBound = 'g'
+        highBound = 4.5
         expectedResult = None
         actualResult = primesInRange.primesInRange(lowBound, highBound)
         self.assertEqual(expectedResult, actualResult)
